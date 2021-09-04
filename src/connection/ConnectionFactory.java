@@ -12,7 +12,7 @@ public class ConnectionFactory {
 	private static final String PASSWORD = "123456";
 
 	// Caminho do banco de dados
-	private static final String DATABASE_URL = "jdbc:postgresql:agenda";
+	private static final String DATABASE_URL = "jdbc:postgresql:apostas";
 
 	public static Connection criarConexao() throws Exception{
 

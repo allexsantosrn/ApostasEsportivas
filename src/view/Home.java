@@ -32,7 +32,7 @@ public class Home {
 			switch (option) {
 			
 			case 1:
-				controllerEquipe.cadastrarClube();
+				controllerEquipe.cadastrarEquipe();
 				break;
 				/*
 			case 2:
