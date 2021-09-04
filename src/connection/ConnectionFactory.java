@@ -14,7 +14,7 @@ public class ConnectionFactory {
 	// Caminho do banco de dados
 	private static final String DATABASE_URL = "jdbc:postgresql:agenda";
 
-	public static Connection CriarConexao() throws Exception{
+	public static Connection criarConexao() throws Exception{
 
 		Class.forName("org.postgresql.Driver");
 
@@ -27,7 +27,7 @@ public class ConnectionFactory {
 	public static void main(String[] args) throws Exception {
 
 		//Recuperar conexão com banco de dados.
-		Connection conn = CriarConexao();
+		Connection conn = criarConexao();
 		
 		//Testar se a conexão é nula.
 		if(conn!=null) {
