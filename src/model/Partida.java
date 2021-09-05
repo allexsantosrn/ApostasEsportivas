@@ -8,10 +8,15 @@ public class Partida {
 	String campeonato;
 	String casa;
 	String fora;
+	String placarFT;
 	int golCasaFT;
 	int golForaFT;
+	String placarHT;
 	int golCasaHT;
 	int golForaHT;
+	float oddCasa;
+	float empate;
+	float oddFora;
 
 	public Date getData() {
 		return data;
@@ -45,6 +50,14 @@ public class Partida {
 		this.fora = fora;
 	}
 
+	public String getPlacarFT() {
+		return placarFT;
+	}
+
+	public void setPlacarFT(String placarFT) {
+		this.placarFT = placarFT;
+	}
+
 	public int getGolCasaFT() {
 		return golCasaFT;
 	}
@@ -61,6 +74,14 @@ public class Partida {
 		this.golForaFT = golForaFT;
 	}
 
+	public String getPlacarHT() {
+		return placarHT;
+	}
+
+	public void setPlacarHT(String placarHT) {
+		this.placarHT = placarHT;
+	}
+
 	public int getGolCasaHT() {
 		return golCasaHT;
 	}
@@ -75,6 +96,30 @@ public class Partida {
 
 	public void setGolForaHT(int golForaHT) {
 		this.golForaHT = golForaHT;
+	}
+
+	public double getOddCasa() {
+		return oddCasa;
+	}
+
+	public void setOddCasa(float oddCasa) {
+		this.oddCasa = oddCasa;
+	}
+
+	public double getEmpate() {
+		return empate;
+	}
+
+	public void setEmpate(float empate) {
+		this.empate = empate;
+	}
+
+	public double getOddFora() {
+		return oddFora;
+	}
+
+	public void setOddFora(float oddFora) {
+		this.oddFora = oddFora;
 	}
 
 }

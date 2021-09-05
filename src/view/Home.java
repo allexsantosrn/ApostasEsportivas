@@ -1,18 +1,21 @@
 package view;
 
+import java.text.ParseException;
 import java.util.Scanner;
 
-import controller.EquipeMBean;
+import controller.PartidaMBean;
 
 public class Home {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
 		
 		int option;
 
 		Scanner input = new Scanner(System.in);
 
-		EquipeMBean controllerEquipe = new EquipeMBean();
+		//EquipeMBean controllerEquipe = new EquipeMBean();
+		
+		PartidaMBean controllerPartida = new PartidaMBean();
 
 		do {
 
@@ -31,30 +34,31 @@ public class Home {
 
 			switch (option) {
 			
+			/*
 			case 1:
 				controllerEquipe.cadastrarEquipe();
 				break;
-				/*
+			
 			case 2:
-				controller.consultarClube();
-				break;
-
+				controllerEquipe.consultarEquipe();
+				break; 
+				
 			case 3:
-				controller.importarClubes();
+				controllerEquipe.importarEquipe();
 				break;
-
+				/*
 			case 4:
 				controller.exportarClubes();
-				break;
+				break; */
 
 			case 5:
-				controller.cadastrarPartida();
+				controllerPartida.cadastrarPartida();
 				break;
-
+				
 			case 6:
-				controller.importarPartidas();
+				controllerPartida.importarPartidas();
 				break;
-
+			/*	
 			case 7:
 				controller.exportarPartidas();
 				break;
